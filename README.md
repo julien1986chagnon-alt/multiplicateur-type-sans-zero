@@ -1,49 +1,49 @@
 # 🔥 Multiplicateur Type Sans Zéro
 
-**Revolutionary arithmetic system that eliminates the digit "0" for perfect, bug-free calculations.**
+**Système arithmétique révolutionnaire qui élimine le chiffre "0" pour des calculs parfaits et sans bugs.**
 
 ---
 
-## 🎯 What is This?
+## 🎯 C'est quoi ?
 
-An innovative mathematical system where:
-- **No digit "0" exists** in any number
-- **Multiplication works perfectly** without bugs
-- **Division inverse is always exact**
-- **Memory is clean** - no zero-related errors
+Un système mathématique innovant où :
+- **Aucun chiffre "0" n'existe** dans les nombres
+- **La multiplication fonctionne parfaitement** sans bugs
+- **La division inverse est toujours exacte**
+- **La mémoire est propre** - zéro erreur liée au zéro
 
-### The Problem We Solve
+### Le Problème que nous résolvons
 
-Google engineers have repeatedly stated that many software bugs originate from the digit **"0"**:
-- Division by zero → crashes
-- Null value handling → errors
-- Off-by-one errors → memory corruption
-- Zero in memory → inconsistencies
+Les ingénieurs de Google l'ont répété maintes fois : beaucoup de bugs logiciels proviennent du chiffre **"0"** :
+- Division par zéro → crashs
+- Gestion des valeurs NULL → erreurs
+- Erreurs off-by-one → corruption de mémoire
+- Zéro en mémoire → incohérences
 
-**Our solution: Eliminate zero entirely.**
+**Notre solution : Éliminer le zéro complètement.**
 
 ---
 
-## 📊 How It Works
+## 📊 Comment ça fonctionne
 
-### The Algorithm
+### L'Algorithme
 
-1. **Multiply normally** (classic mathematics)
-2. **Check if result contains digit "0"**
-3. **If YES** → Find the next number WITHOUT "0" → That's your answer
-4. **If NO** → That's your answer directly
+1. **Multiplier normalement** (mathématiques classiques)
+2. **Vérifier si le résultat contient le chiffre "0"**
+3. **Si OUI** → Trouver le nombre suivant SANS "0" → C'est votre réponse
+4. **Si NON** → C'est votre réponse directement
 
-### Examples
+### Exemples
 
 ```
-CLASSIC SYSTEM    →    OUR SYSTEM
-4 × 3 = 12        →    4 × 3 = 12 ✓ (no zero, accepted)
-9 × 9 = 81        →    9 × 9 = 89 (81 has no zero, but we get 89)
-19 × 11 = 209     →    19 × 11 = 219 (209 has zero, skip to 219)
-27 × 5 = 135      →    27 × 5 = 148 (135 has zero, skip to 148)
+SYSTÈME CLASSIQUE  →  NOTRE SYSTÈME
+4 × 3 = 12         →  4 × 3 = 12 ✓ (pas de zéro, accepté)
+9 × 9 = 81         →  9 × 9 = 89 (81 n'a pas de zéro, mais on obtient 89)
+19 × 11 = 209      →  19 × 11 = 219 (209 a un zéro, on passe à 219)
+27 × 5 = 135       →  27 × 5 = 148 (135 a un zéro, on passe à 148)
 ```
 
-### Inverse Division (Perfect Reciprocity)
+### Division Inverse (Réciprocité Parfaite)
 
 ```
 148 ÷ 5 = 27 ✓
@@ -51,13 +51,13 @@ CLASSIC SYSTEM    →    OUR SYSTEM
 89 ÷ 9 = 9 ✓
 ```
 
-**Always exact. No decimals. No errors.**
+**Toujours exact. Pas de décimales. Pas d'erreurs.**
 
 ---
 
-## 🔢 Number Sequence
+## 🔢 Séquence de Nombres
 
-In our system, valid numbers are:
+Dans notre système, les nombres valides sont :
 
 ```
 1, 2, 3, 4, 5, 6, 7, 8, 9,
@@ -69,46 +69,46 @@ In our system, valid numbers are:
 1111, ...
 ```
 
-**NO: 10, 20, 30, 100, 101, 102, 103, 110, 120, ...**
+**NON : 10, 20, 30, 100, 101, 102, 103, 110, 120, ...**
 
 ---
 
-## 💪 Hardcore Examples
+## 💪 Exemples Hardcore
 
 ### Test 1
 ```
 123456789 × 987654321
-Classic: 121932631112635269
-Our System: 135648814827574789
-Inverse: 135648814827574789 ÷ 987654321 = 123456789 ✓
+Classique : 121932631112635269
+Notre Système : 135648814827574789
+Inverse : 135648814827574789 ÷ 987654321 = 123456789 ✓
 ```
 
 ### Test 2
 ```
 999999999 × 999999999
-Classic: 999999998000000001
-Our System: 1234567898765431989
-Inverse: 1234567898765431989 ÷ 999999999 = 999999999 ✓
+Classique : 999999998000000001
+Notre Système : 1234567898765431989
+Inverse : 1234567898765431989 ÷ 999999999 = 999999999 ✓
 ```
 
 ### Test 3
 ```
 81 × 81
-Classic: 6561
-Our System: 7271
-Inverse: 7271 ÷ 81 = 81 ✓
+Classique : 6561
+Notre Système : 7271
+Inverse : 7271 ÷ 81 = 81 ✓
 ```
 
 ---
 
-## 📁 Repository Structure
+## 📁 Structure du Repo
 
 ```
 multiplicateur-type-sans-zero/
-├── README.md                 # This file
-├── WHITE_PAPER.md           # Scientific documentation
-├── LICENSE                  # MIT License
-├── calculator.py            # Main calculator module
+├── README.md                 # Ce fichier
+├── WHITE_PAPER.md           # Documentation scientifique
+├── LICENSE                  # Licence MIT
+├── calculator.py            # Module calculatrice principal
 ├── tables/
 │   ├── table_1.txt
 │   ├── table_2.txt
@@ -126,7 +126,7 @@ multiplicateur-type-sans-zero/
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Démarrage Rapide
 
 ### Installation
 
@@ -136,87 +136,96 @@ cd multiplicateur-type-sans-zero
 python calculator.py
 ```
 
-### Usage
+### Utilisation
 
 ```python
-# Run the calculator
+# Lancer la calculatrice
 python calculator.py
 
-# Enter two numbers:
+# Entrer deux nombres :
 # Premier nombre : 27
 # Deuxième nombre : 5
-# Result: 27 × 5 = 148 (not 135)
+# Résultat : 27 × 5 = 148 (et non 135)
 ```
 
 ---
 
-## 📈 Multiplication Tables
+## 📈 Tables de Multiplication
 
-Complete multiplication tables without zero:
+Tables complètes de multiplication sans zéro :
 
-- **Table 1**: 1×1 to 1×111
-- **Table 2**: 2×1 to 2×111
-- **Table 3**: 3×1 to 3×111
-- **Table 4**: 4×1 to 4×111
-- **Table 5**: 5×1 to 5×111
-- **Table 6**: 6×1 to 6×111
-- **Table 7**: 7×1 to 7×111
-- **Table 8**: 8×1 to 8×111
-- **Table 9**: 9×1 to 9×111
-- **Table 11**: 11×1 to 11×111
+- **Table 1** : 1×1 jusqu'à 1×111
+- **Table 2** : 2×1 jusqu'à 2×111
+- **Table 3** : 3×1 jusqu'à 3×111
+- **Table 4** : 4×1 jusqu'à 4×111
+- **Table 5** : 5×1 jusqu'à 5×111
+- **Table 6** : 6×1 jusqu'à 6×111
+- **Table 7** : 7×1 jusqu'à 7×111
+- **Table 8** : 8×1 jusqu'à 8×111
+- **Table 9** : 9×1 jusqu'à 9×111
+- **Table 11** : 11×1 jusqu'à 11×111
 
-See `/tables/` directory for complete tables.
-
----
-
-## 🔬 Scientific Impact
-
-### Why This Matters
-
-1. **Bug Prevention**: Eliminates entire classes of software bugs
-2. **Memory Safety**: No null pointer issues
-3. **Mathematical Purity**: Consistent arithmetic without exceptions
-4. **Computational Integrity**: Perfect reciprocity (multiplication ↔ division)
-
-### Potential Applications
-
-- **Cryptography**: Zero-free arithmetic could strengthen encryption
-- **Database Systems**: Eliminate null-related anomalies
-- **Financial Systems**: Perfect precision without rounding errors
-- **Physics Simulations**: Clean calculations without singularities
+Voir le répertoire `/tables/` pour les tables complètes.
 
 ---
 
-## 📄 License
+## 🔬 Impact Scientifique
 
-MIT License - See LICENSE file for details.
+### Pourquoi c'est Important
 
-**Free to use, modify, and distribute.**
+1. **Prévention des Bugs** : Élimine des classes entières de bugs logiciels
+2. **Sécurité Mémoire** : Pas de problèmes de pointeurs NULL
+3. **Pureté Mathématique** : Arithmétique cohérente sans exceptions
+4. **Intégrité Computationnelle** : Réciprocité parfaite (multiplication ↔ division)
+
+### Applications Potentielles
+
+- **Cryptographie** : L'arithmétique sans zéro pourrait renforcer le chiffrement
+- **Systèmes de Base de Données** : Éliminer les anomalies liées à NULL
+- **Systèmes Financiers** : Précision parfaite sans erreurs d'arrondi
+- **Simulations Physiques** : Calculs propres sans singularités
 
 ---
 
-## 🤝 Contributing
+## 📄 Licence
 
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
+Licence MIT - Voir le fichier LICENSE pour les détails.
+
+**Libre d'utilisation, de modification et de distribution.**
+
+---
+
+## 🤝 Contribution
+
+Les contributions sont bienvenues ! S'il vous plaît :
+1. Forker le repository
+2. Créer une branche de feature
+3. Soumettre une pull request
 
 ---
 
 ## 📞 Contact
 
-**Creator**: Julien Chagnon
-**GitHub**: [@julien1986chagnon-alt](https://github.com/julien1986chagnon-alt)
+**Créateur** : Julien Chagnon
+**Email** : julien1986chagnon@gmail.com
+**GitHub** : [@julien1986chagnon-alt](https://github.com/julien1986chagnon-alt)
 
 ---
 
-## 🌟 Show Your Support
+## 🌟 Montrez votre Soutien
 
-⭐ **Star this repository** if you find it interesting!
+⭐ **Mettez une étoile à ce repository** si vous trouvez ça intéressant !
 
-**Share the revolution!** 🔥
+**Partagez la révolution !** 🔥
 
 ---
 
-**"Mathematics without zero. Logic without bugs. The future is here."**
+## 🇫🇷 LANGUE
+
+**⚠️ Je m'exprime EXCLUSIVEMENT en FRANÇAIS**
+
+*All communications are conducted in French only.*
+
+---
+
+**"Les mathématiques sans zéro. La logique sans bugs. L'avenir est ici."**
